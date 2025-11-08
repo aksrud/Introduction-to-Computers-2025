@@ -48,7 +48,7 @@ async function predict() {
       // const classPrediction =
       //     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
       // labelContainer.childNodes[i].innerHTML = classPrediction;
-      if (prediction[i].probability.toFixed(2) === 1.0) {
+      if (prediction[i].probability.toFixed(2) == 1.00) {
         labelContainer.childNodes[0].innerHTML = explanation[i];
       }
   }
